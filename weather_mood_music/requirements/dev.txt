@@ -1,0 +1,6 @@
+-r base.txt
+ipython== 8.14.0
+requests==2.31.0
+
+# weather_app/weather_data.py
+
