@@ -2,6 +2,7 @@
 
 from django.shortcuts import render
 from .weather_data import get_weather_data
+from .models import WeatherStatus
 
 def weather_view(request):
     # Fetch weather data using the get_weather_data function
@@ -23,3 +24,7 @@ def mood_view(request):
     mood = classify_mood(weather_data)
 
     return render(request, 'weather_app/mood.html', {'mood': mood})
+
+def weather_status_list(request):
+    weather_statuses = WeatherStatus.objects.all()
+    return render(request, 'weather/weather_status_list.html', {'weather_statuses': weather_statuses})

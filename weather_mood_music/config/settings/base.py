@@ -19,6 +19,7 @@ DEFAULT_APPS = [
 CUSTOM_APPS = [
     "apps.user",
     "apps.resources",
+    "apps.mood",
 ]
 
 THIRD_PARTY_APPS = [
