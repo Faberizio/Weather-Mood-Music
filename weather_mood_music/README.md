@@ -14,7 +14,7 @@ The Weather Mood Music App is a Django-based web application that provides users
 
 To get started with the Weather Mood Music App, follow these steps:
 
-````bash
+``` bash
 # Clone the repository
 git clone https://github.com/Faberizio/Weather-Mood-Music.git
 cd weather-mood-music

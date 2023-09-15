@@ -36,6 +36,9 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'user.middleware.login_mw.LoginMiddleware',  # Login Middleware
+    'user.middleware.logout_mw.LogoutMiddleware',  # Logout Middleware
+    'user.middleware.logging_mw.LoggingMiddleware',  # Logging Middleware
 ]
 
 ROOT_URLCONF = "weather_mood_music.urls"
