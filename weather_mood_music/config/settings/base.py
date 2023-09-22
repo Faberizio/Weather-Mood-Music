@@ -20,6 +20,7 @@ CUSTOM_APPS = [
     "apps.user",
     "apps.resources",
     "apps.mood",
+    "apps.weather",
 ]
 
 THIRD_PARTY_APPS = [
