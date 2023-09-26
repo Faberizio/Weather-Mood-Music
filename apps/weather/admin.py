@@ -1,8 +1,8 @@
 # apps/weather/admin.py
 from django.contrib import admin
-from .models import WeatherStatus
+from .models import Weather
 
-@admin.register(WeatherStatus)
+@admin.register(Weather)
 class WeatherStatusAdmin(admin.ModelAdmin):
     list_display = ('name', 'description')
     search_fields = ('name', 'description')

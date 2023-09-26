@@ -1,6 +1,6 @@
 from django.db import models
-from mood.models import Mood
-from weather.models import Weather
+from apps.mood.models import Mood
+#from apps.weather.models import Weather
 
 class Weather(models.Model):
     name = models.CharField(max_length=255)
@@ -16,3 +16,4 @@ class MoodWeatherAssociation(models.Model):
 
     def __str__(self):
         return f"{self.mood} - {self.weather}"
+    

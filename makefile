@@ -30,3 +30,10 @@ dev-shell:
 
 dev-rollback:
 	python manage.py migrate $(app) $(m) --settings=config.settings.dev
+
+dev-test:
+	python manage.py test --settings=config.settings.dev
+
+#dev-test:
+	#@pip install python-dotenv  # Install dotenv if not already installed
+	#@python -m dotenv -f .env run python manage.py test --settings=config.settings.dev
